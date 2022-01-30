@@ -1,0 +1,43 @@
+{
+  "name": "simple-image-labeler",
+  "version": "0.0.0",
+  "description": "Simple image labeler",
+  "scripts": {
+    "prepare": "husky install",
+    "serve": "APP_ENV=dev nodemon",
+    "start": "APP_ENV=dev node ./dist/startServer.js",
+    "bundle": "esbuild src/startServer.ts --bundle --platform=node --outfile=dist/startServer.js"
+  },
+  "dependencies": {
+    "@naturalcycles/backend-lib": "^4.2.3",
+    "@naturalcycles/js-lib": "^14.85.1",
+    "@naturalcycles/nodejs-lib": "^12.64.1",
+    "@sentry/node": "^6.17.3",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "fs-extra": "^10.0.0",
+    "tsconfig-paths": "^3.12.0"
+  },
+  "devDependencies": {
+    "@naturalcycles/dev-lib": "^12.16.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.13",
+    "esbuild": "^0.14.14",
+    "esbuild-register": "^3.3.2",
+    "nodemon": "^2.0.15"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirillgroshkov/simple-image-labeler"
+  },
+  "engines": {
+    "node": ">=16.10.0"
+  },
+  "author": "Kirill Groshkov <1@inventix.ru>",
+  "keywords": [
+    "image",
+    "label",
+    "ml"
+  ]
+}

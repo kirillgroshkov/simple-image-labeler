@@ -1,0 +1,15 @@
+{
+  "exec": "node -r esbuild-register ./src/startServer.ts",
+  "watch": ["src"],
+  "ext": "ts,js,json",
+  "ignore": ["node_modules", "src/**/*.test.ts"],
+  "env": {
+    "TZ": "UTC",
+    "NODE_ENV": "development"
+  },
+  "verbose": false,
+  "events": {
+    "start": "clear"
+  },
+  "signal": "SIGKILL"
+}
